@@ -1,0 +1,32 @@
+---
+export interface Props {
+  id: string;
+  headerId: string;
+  title: string;
+  body: string;
+}
+
+const { id, headerId, title, body } = Astro.props as Props;
+---
+
+<div class="accordion accordion-flush" id="questions">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id={headerId}>
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target={`#${id}`}
+      >
+        {title}
+      </button>
+    </h2>
+    <div
+      id={id}
+      class="accordion-collapse collapse"
+      data-bs-parent="#questions"
+    >
+      <div class="accordion-body">{body}</div>
+    </div>
+  </div>
+</div>

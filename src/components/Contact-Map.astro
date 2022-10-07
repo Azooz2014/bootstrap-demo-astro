@@ -1,0 +1,51 @@
+---
+import Map from "./Map.astro";
+---
+
+<!-- Contact & Map --><!-- <link
+  href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css"
+  rel="stylesheet"
+/> -->
+<section class="p-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md">
+        <h2 class="text-center mb-4">Contact Info</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <span class="fw-bold">Main Location:</span> Al-Nahdah, Al-Riyadh
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Enrollment Phone:</span> +966 53 555 5555
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Student Phone:</span> +966 53 444 5555
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Enrollment Email:</span>
+            enroll@frontendbc.test
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Student Email:</span>
+            student@frontendbc.test
+          </li>
+        </ul>
+      </div>
+      <div class="col-md">
+        <Map />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <script>
+    mapboxgl.accessToken =
+      "pk.eyJ1IjoiYWJkZWxheml6ZmFraSIsImEiOiJjbDd3MjUzYmEwaDdmM3ZwZW0xdTF6cDVnIn0.7hVLsXDM3F8ArxOaTtcdvw";
+    const map = new mapboxgl.Map({
+      container: "map", // container ID
+      style: "mapbox://styles/mapbox/streets-v11", // style URL
+      center: [46.7982743, 24.7606592], // starting position [lng, lat]
+      zoom: 12, // starting zoom
+    });
+  </script>
+</section> -->

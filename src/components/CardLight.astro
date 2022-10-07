@@ -1,0 +1,24 @@
+---
+export interface Props {
+  icon: string;
+  title: string;
+  content: string;
+}
+
+const { icon, title, content } = Astro.props as Props;
+---
+
+<div class="col-md">
+  <div class="card bg-secondary text-light">
+    <div class="card-body">
+      <div class="h1">
+        <i class={icon}></i>
+      </div>
+      <h3 class="card-title">{title}</h3>
+      <p class="card-text">
+        {content}
+      </p>
+      <a href="#" class="btn btn-dark">Read More</a>
+    </div>
+  </div>
+</div>
